@@ -1,0 +1,177 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #F0F0F0;
+  margin: 0;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  margin-bottom: 1rem;
+}
+
+.totales {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.totales div {
+  background: #ADD8E6;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.tasa {
+  margin: 1rem auto;
+}
+
+.tasa label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+#tasa-dia {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+main {
+  max-width: 600px;
+  margin: 1rem auto;
+  padding: 0 1rem;
+}
+
+.tarjeta {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tarjeta label {
+  flex: 1;
+  margin-left: 0.5rem;
+}
+
+.tarjeta input[type="checkbox"] {
+  transform: scale(1.2);
+}
+
+.tarjeta button {
+  border: none;
+  background: #FFA500;
+  color: #fff;
+  border-radius: 50px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.tarjeta button.editar {
+  background: #007BFF;
+}
+
+.tarjeta .eliminar {
+  background: #FF4C4C;
+  border: none;
+  border-radius: 50px;
+  padding: 0.5rem;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 0.5rem;
+}
+
+.tarjeta button:hover {
+  opacity: 0.9;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.modal-content label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  margin-top: 0.25rem;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.modal-buttons button {
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  cursor: pointer;
+  color: #fff;
+}
+
+#guardar-btn {
+  background: #FFA500;
+}
+
+#cancelar-btn {
+  background: #333;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+  color: #333;
+}
+
+#btn-nuevo-articulo {
+  background: #28a745;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}

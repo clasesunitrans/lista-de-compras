@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lista de Compras</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Lista de Compras</h1>
+    <button id="btn-nuevo-articulo">+ Añadir Artículo</button>
+    <div class="totales">
+      <div>Total (Bs): <span id="total-bs">0.00</span></div>
+      <div>Total (USD): <span id="total-usd">0.00</span></div>
+    </div>
+    <div class="tasa">
+      <label for="tasa-dia">Tasa del Día (Bs/USD):</label>
+      <input type="number" id="tasa-dia" step="1.0" />
+    </div>
+  </header>
+  <main>
+    <div id="lista-compras"></div>
+  </main>
+
+  <div class="modal" id="modal-articulo">
+    <div class="modal-content">
+      <h2 id="modal-titulo"></h2>
+      <form id="form-articulo">
+        <label for="nombre" id="label-nombre" style="display:none;">Nombre:</label>
+    <input type="text" id="nombre" style="display:none;" />
+    <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad" step="1" min="0" />
+
+        <label for="precio">Precio (Bs):</label>
+        <input type="number" id="precio" step="0.01" min="0" />
+
+        <div id="monto-bs"></div>
+        <div id="monto-usd"></div>
+
+        <div class="modal-buttons">
+          <button type="submit" id="guardar-btn">Guardar</button>
+          <button type="button" id="cancelar-btn">Cancelar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer>© 2025 - Lic. Felipe Martíez hmbelearining@gmail.com</footer>
+  <script src="script.js"></script>
+</body>
+</html>
