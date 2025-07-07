@@ -33,6 +33,7 @@ let articulos = [
   { id: 8, nombre: 'Pollo', precioSugerido: 100.00, cantidad: 0, precioReal: 1, agregado: false, incluido: false },
   { id: 9, nombre: 'Toortilla', precioSugerido: 100.00, cantidad: 0, precioReal: 1, agregado: false, incluido: false },
   { id: 10, nombre: 'Mantequilla', precioSugerido: 100.00, cantidad: 0, precioReal: 1, agregado: false, incluido: false },
+  { id: 10, nombre: 'Gatarina', precioSugerido: 100.00, cantidad: 0, precioReal: 1, agregado: false, incluido: false },
 ];
 
 function renderizarLista() {
