@@ -22,18 +22,22 @@ let articulos = [
   { id: 2, nombre: 'Huevos (docena)', precioSugerido: 100.00, cantidad: 1, precioReal: 0, agregado: false, incluido: false },
   { id: 3, nombre: 'Pan cuadrado', precioSugerido: 100.00, cantidad: 1, precioReal: 0, agregado: false, incluido: false },
   { id: 4, nombre: 'Queso blanco (kg)', precioSugerido: 100.00, cantidad: 1, precioReal: 0, agregado: false, incluido: false },
-  { id: 4, nombre: 'Arroz', precioSugerido: 100.00, cantidad: 1, precioReal: 0, agregado: false, incluido: false },
-  { id: 5, nombre: 'Azúcar', precioSugerido: 100.00, cantidad: 1, precioReal: 0, agregado: false, incluido: false },
-  { id: 6, nombre: 'Café', precioSugerido: 100.00, cantidad: 1, precioReal: 0, agregado: false, incluido: false },
-  { id: 7, nombre: 'Queso amarillo', precioSugerido: 100.000, cantidad: 1, precioReal: 0, agregado: false, incluido: false },
-  { id: 8, nombre: 'Aceite', precioSugerido:100.00, cantidad: 0, precioReal: 1, agregado: false, incluido: false },
-  { id: 9, nombre: 'Pasta', precioSugerido: 100.00, cantidad: 0, precioReal: 1, agregado: false, incluido: false },
-  { id: 10, nombre: 'Harina', precioSugerido: 100.00, cantidad: 0, precioReal: 1, agregado: false, incluido: false },
-  { id: 7, nombre: 'Carne', precioSugerido: 100.00, cantidad: 0, precioReal: 1, agregado: false, incluido: false },
-  { id: 8, nombre: 'Pollo', precioSugerido: 100.00, cantidad: 0, precioReal: 1, agregado: false, incluido: false },
-  { id: 9, nombre: 'Tortilla', precioSugerido: 100.00, cantidad: 0, precioReal: 1, agregado: false, incluido: false },
-  { id: 10, nombre: 'Mantequilla', precioSugerido: 100.00, cantidad: 0, precioReal: 1, agregado: false, incluido: false },
-  { id: 11, nombre: 'Gatarina', precioSugerido: 100.00, cantidad: 0, precioReal: 1, agregado: false, incluido: false },
+  { id: 5, nombre: 'Arroz', precioSugerido: 100.00, cantidad: 1, precioReal: 0, agregado: false, incluido: false },
+  { id: 6, nombre: 'Azúcar', precioSugerido: 100.00, cantidad: 1, precioReal: 0, agregado: false, incluido: false },
+  { id: 7, nombre: 'Café', precioSugerido: 100.00, cantidad: 1, precioReal: 0, agregado: false, incluido: false },
+  { id: 8, nombre: 'Queso amarillo', precioSugerido: 100.000, cantidad: 1, precioReal: 0, agregado: false, incluido: false },
+  { id: 9, nombre: 'Aceite', precioSugerido:100.00, cantidad: 0, precioReal: 1, agregado: false, incluido: false },
+  { id: 10, nombre: 'Pasta', precioSugerido: 100.00, cantidad: 0, precioReal: 1, agregado: false, incluido: false },
+  { id: 11, nombre: 'Harina', precioSugerido: 100.00, cantidad: 0, precioReal: 1, agregado: false, incluido: false },
+  { id: 12, nombre: 'Carne', precioSugerido: 100.00, cantidad: 0, precioReal: 1, agregado: false, incluido: false },
+  { id: 13, nombre: 'Pollo', precioSugerido: 100.00, cantidad: 0, precioReal: 1, agregado: false, incluido: false },
+  { id: 14, nombre: 'Tortilla', precioSugerido: 100.00, cantidad: 0, precioReal: 1, agregado: false, incluido: false },
+  { id: 15, nombre: 'Mantequilla', precioSugerido: 100.00, cantidad: 0, precioReal: 1, agregado: false, incluido: false },
+  { id: 16, nombre: 'Gatarina', precioSugerido: 100.00, cantidad: 0, precioReal: 1, agregado: false, incluido: false },
+  { id: 17, nombre: 'Te', precioSugerido: 100.00, cantidad: 0, precioReal: 1, agregado: false, incluido: false },
+  { id: 18, nombre: 'Platano', precioSugerido: 100.00, cantidad: 0, precioReal: 1, agregado: false, incluido: false },
+  { id: 19, nombre: 'Tomate', precioSugerido: 100.00, cantidad: 0, precioReal: 1, agregado: false, incluido: false },
+  { id: 20, nombre: 'Cebolla', precioSugerido: 100.00, cantidad: 0, precioReal: 1, agregado: false, incluido: false },
 ];
 
 function renderizarLista() {
@@ -201,7 +205,7 @@ formArticulo.addEventListener('submit', (e) => {
   const cantidad = parseFloat(cantidadInput.value);
   const precio = parseFloat(precioInput.value);
   const nombre = nombreInput.value.trim();
-  if (cantidad > 0 && (precio > 0 || !isNaN(precio))) {
+  if (cantidad >= 0 && (precio >= 0 || !isNaN(precio))) {
     if (esNuevo) {
       if (!nombre) {
         alert('El nombre es obligatorio.');
