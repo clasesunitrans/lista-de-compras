@@ -29,12 +29,15 @@
       <h2 id="modal-titulo"></h2>
       <form id="form-articulo">
         <label for="nombre" id="label-nombre" style="display:none;">Nombre:</label>
-    <input type="text" id="nombre" style="display:none;" />
-    <label for="cantidad">Cantidad:</label>
+        <input type="text" id="nombre" style="display:none;" />
+        <label for="cantidad">Cantidad:</label>
         <input type="number" id="cantidad" step="1" min="0" />
 
-        <label for="precio">Precio (Bs):</label>
-        <input type="number" id="precio" step="0.01" min="0" />
+        <label for="precio-usd">Precio (USD):</label>
+        <input type="number" id="precio-usd" step="0.01" min="0" />
+        
+        <label for="precio-bs">Precio (Bs):</label>
+        <input type="number" id="precio-bs" step="0.01" min="0" />
 
         <div id="monto-bs"></div>
         <div id="monto-usd"></div>
